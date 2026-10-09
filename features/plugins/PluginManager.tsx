@@ -295,7 +295,7 @@ export default function PluginManager() {
       pluginId,
       pluginName,
       action,
-      performedBy: "admin@Alian-Structure.io",
+      performedBy: "admin@aidorap.io",
       timestamp: new Date().toISOString(),
       details,
     };

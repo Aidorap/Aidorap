@@ -18,7 +18,7 @@ type ThemeModeContextValue = {
   toggleMode: () => void;
 };
 
-const STORAGE_KEY = 'Alian-Structure-theme-mode';
+const STORAGE_KEY = 'aidorap-theme-mode';
 
 const ThemeModeContext = createContext<ThemeModeContextValue | undefined>(undefined);
 

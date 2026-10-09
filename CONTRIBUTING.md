@@ -1,6 +1,6 @@
-# Contributing to Alian Structure UI
+# Contributing to Aidorap UI
 
-Thank you for your interest in contributing to Alian Structure UI! This document provides guidelines and instructions to help you contribute effectively to this AI agent marketplace with a beautiful cosmic UI theme.
+Thank you for your interest in contributing to Aidorap UI! This document provides guidelines and instructions to help you contribute effectively to this AI agent marketplace with a beautiful cosmic UI theme.
 
 ## 🚀 Tech Stack Overview
 
@@ -28,8 +28,8 @@ Before you begin, familiarize yourself with our core technologies:
 
 1. **Fork and clone the repository**
 ```bash
-git clone https://github.com/your-username/alian_structure-UI.git
-cd alian_structure-UI
+git clone https://github.com/your-username/Aidorap.git
+cd Aidorap
 ```
 
 2. **Install dependencies**
@@ -169,4 +169,4 @@ npm run lint
 - Help others who are learning the codebase
 - Share your use cases and feedback
 
-Thank you for contributing to making Alian Structure UI a better platform! 🎉
+Thank you for contributing to making Aidorap UI a better platform! 🎉

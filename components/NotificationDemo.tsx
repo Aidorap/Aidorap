@@ -19,7 +19,7 @@ export function NotificationDemo() {
     try {
       await showNotification({
         title: 'Test Notification 🚀',
-        body: 'This is a test notification from Alian-Structure!',
+        body: 'This is a test notification from Aidorap!',
         tag: 'test',
         data: {
           type: 'general',

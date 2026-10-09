@@ -7,11 +7,11 @@ import { Toaster } from 'sonner';
 
 export const metadata: Metadata = {
   metadataBase: new URL('http://localhost:3000'),
-  title: 'Alian-Structure - AI Agent Marketplace',
+  title: 'Aidorap - AI Agent Marketplace',
   description: 'Create, discover, and interact with AI agents in a cosmic universe',
   keywords: ['AI agents', 'marketplace', 'automation', 'AI', 'Stellar'],
   openGraph: {
-    title: 'Alian-Structure',
+    title: 'Aidorap',
     description: 'Beautiful AI agent marketplace with cosmic UI',
     type: 'website',
     images: [
@@ -19,7 +19,7 @@ export const metadata: Metadata = {
         url: '/icons/icon-512x512.png',
         width: 512,
         height: 512,
-        alt: 'Alian-Structure',
+        alt: 'Aidorap',
       },
     ],
   },
@@ -27,7 +27,7 @@ export const metadata: Metadata = {
   appleWebApp: {
     capable: true,
     statusBarStyle: 'default',
-    title: 'Alian-Structure',
+    title: 'Aidorap',
     startupImage: [
       {
         url: '/icons/icon-192x192.png',
@@ -84,7 +84,7 @@ function RootLayout({ children }: { children: React.ReactNode }) {
         <meta name="mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-status-bar-style" content="default" />
-        <meta name="apple-mobile-web-app-title" content="Alian-Structure" />
+        <meta name="apple-mobile-web-app-title" content="Aidorap" />
         
         {/* Critical CSS inline */}
         <style

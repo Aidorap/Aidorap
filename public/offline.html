@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Offline - Alian-Structure</title>
+    <title>Offline - Aidorap</title>
     <style>
         * {
             margin: 0;
@@ -218,10 +218,10 @@
             if ('caches' in window) {
                 try {
                     const cacheNames = await caches.keys();
-                    const Alian-StructureCaches = cacheNames.filter(name => name.startsWith('Alian-Structure-'));
+                    const aidorapCaches = cacheNames.filter(name => name.startsWith('aidorap-'));
                     
-                    console.log(`Found ${Alian-StructureCaches.length} caches`);
-                    Alian-StructureCaches.forEach(cacheName => {
+                    console.log(`Found ${aidorapCaches.length} caches`);
+                    aidorapCaches.forEach(cacheName => {
                         caches.open(cacheName).then(cache => {
                             cache.keys().then(keys => {
                                 console.log(`${cacheName}: ${keys.length} entries`);

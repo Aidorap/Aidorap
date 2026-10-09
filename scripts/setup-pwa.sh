@@ -1,9 +1,9 @@
 #!/bin/bash
 
-# PWA Setup Script for Alian-Structure
+# PWA Setup Script for Aidorap
 # This script helps set up the PWA features
 
-echo "🚀 Setting up PWA features for Alian-Structure..."
+echo "🚀 Setting up PWA features for Aidorap..."
 
 # Check if Node.js is installed
 if ! command -v node &> /dev/null; then

@@ -1,9 +1,9 @@
 const CACHE_VERSION = 'v1.2.0';
-const STATIC_CACHE = `Alian-Structure-static-${CACHE_VERSION}`;
-const API_CACHE = `Alian-Structure-api-${CACHE_VERSION}`;
-const IMAGE_CACHE = `Alian-Structure-images-${CACHE_VERSION}`;
-const FONT_CACHE = `Alian-Structure-fonts-${CACHE_VERSION}`;
-const RUNTIME_CACHE = `Alian-Structure-runtime-${CACHE_VERSION}`;
+const STATIC_CACHE = `aidorap-static-${CACHE_VERSION}`;
+const API_CACHE = `aidorap-api-${CACHE_VERSION}`;
+const IMAGE_CACHE = `aidorap-images-${CACHE_VERSION}`;
+const FONT_CACHE = `aidorap-fonts-${CACHE_VERSION}`;
+const RUNTIME_CACHE = `aidorap-runtime-${CACHE_VERSION}`;
 
 // Critical assets to cache immediately on install
 const STATIC_ASSETS = [
@@ -110,7 +110,7 @@ self.addEventListener('activate', (event) => {
       caches.keys()
         .then((cacheNames) => {
           const oldCaches = cacheNames.filter((cacheName) => {
-            return cacheName.startsWith('Alian-Structure-') && 
+            return cacheName.startsWith('aidorap-') && 
                    !cacheName.includes(CACHE_VERSION);
           });
           
@@ -246,7 +246,7 @@ async function getOfflineFallback() {
     `<!DOCTYPE html>
     <html>
       <head>
-        <title>Offline - Alian-Structure</title>
+        <title>Offline - Aidorap</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <style>
@@ -624,7 +624,7 @@ self.addEventListener('push', (event) => {
     } catch (e) {
       // Fallback to text if JSON parsing fails
       notificationData = {
-        title: 'Alian-Structure',
+        title: 'Aidorap',
         body: event.data.text(),
         icon: '/icons/icon-192x192.png',
         badge: '/icons/icon-192x192.png',
@@ -635,7 +635,7 @@ self.addEventListener('push', (event) => {
     }
     
     const options = {
-      body: notificationData.body || 'New notification from Alian-Structure',
+      body: notificationData.body || 'New notification from Aidorap',
       icon: notificationData.icon || '/icons/icon-192x192.png',
       badge: notificationData.badge || '/icons/icon-192x192.png',
       tag: notificationData.tag || 'general',
@@ -653,7 +653,7 @@ self.addEventListener('push', (event) => {
     
     event.waitUntil(
       self.registration.showNotification(
-        notificationData.title || 'Alian-Structure',
+        notificationData.title || 'Aidorap',
         options
       )
     );
@@ -774,7 +774,7 @@ async function getCacheStats() {
   const cacheNames = await caches.keys();
   
   for (const cacheName of cacheNames) {
-    if (cacheName.startsWith('Alian-Structure-')) {
+    if (cacheName.startsWith('aidorap-')) {
       const cache = await caches.open(cacheName);
       const keys = await cache.keys();
       
@@ -814,9 +814,9 @@ async function getCacheStats() {
 // Clear all caches
 async function clearAllCaches() {
   const cacheNames = await caches.keys();
-  const alianStructureCaches = cacheNames.filter(name => name.startsWith('Alian-Structure-'));
+  const aidorapCaches = cacheNames.filter(name => name.startsWith('aidorap-'));
   
-  await Promise.all(alianStructureCaches.map(name => caches.delete(name)));
+  await Promise.all(aidorapCaches.map(name => caches.delete(name)));
   console.log('[SW] All caches cleared');
 }
 

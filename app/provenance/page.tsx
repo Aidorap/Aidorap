@@ -2,7 +2,7 @@ import React from "react";
 import ProvenanceExplorer from "@/features/provenance/components/ProvenanceExplorer";
 
 export const metadata = {
-  title: "Provenance Explorer | Alian-Structure",
+  title: "Provenance Explorer | Aidorap",
   description: "Audit and visualize agent actions and provenance records.",
 };
 
